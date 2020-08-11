@@ -1,0 +1,24 @@
+@import "config";
+
+//Home Section
+.home {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto 0;
+  align-items: center;
+  height: 100%;
+
+  img {
+    width: 750px;
+    height: 300px;
+  }
+
+  .description p {
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: font-weight(semi-bold);
+    text-align: justify;
+    color: color(purple-color);
+  }
+}

@@ -1,0 +1,74 @@
+@import "config";
+
+//Characters Section
+.characters {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto 0;
+  align-items: left;
+  height: 100%;
+
+  .text-secondary {
+    border-left: 5px solid color(red-color);
+    border-bottom: 5px solid color(red-color);
+    padding-left: padding(auto);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    justify-content: center;
+
+    &__card {
+      width: 250px;
+      height: 350px;
+      margin: 40px;
+      position: relative;
+      // background: color(primary-color);
+      background: linear-gradient(
+        45deg,
+        hsla(347, 94%, 48%, 1) 0%,
+        hsla(318, 44%, 51%, 1) 100%
+      );
+      border-radius: 20px;
+      border: 4px double color(white-color);
+    }
+  }
+  img {
+    width: 200px;
+    height: 250px;
+    top: -15%;
+    left: 10%;
+    border-radius: 20px;
+    border: 4px double color(white-color);
+    position: absolute;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  .details {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    padding: padding(medium);
+
+    h1 {
+      font-size: 16px;
+      text-align: center;
+      color: color(off-white);
+
+      span {
+        background: color(off-white);
+        padding: 2.5px 15px 2.5px 15px;
+        width: 40px;
+        border-radius: 50px;
+        font-size: 12px;
+        color: hsla(347, 94%, 48%, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap");
+
+$paddings: (
+  normal: 10px,
+  medium: 20px,
+  auto: 15px,
+);
+$border: 15px;
+
+$colors: (
+  primary-color: #272727,
+  white-color: #ffffff,
+  blue-color: #6f7bf7,
+  gradient: hsla(340, 86%, 47%, 1),
+  red-color: #e63946,
+  off-white: #fbf9ff,
+  purple-color: #b4cded,
+  black-color: #3f4045,
+);
+
+$font-weights: (
+  bold: 700,
+  semi-bold: 600,
+  medium: 500,
+  regular: 400,
+  light: 300,
+);
+
+//functions
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font-weight($font-weight-value) {
+  @return map-get($font-weights, $font-weight-value);
+}
+
+@function padding($padding-value) {
+  @return map-get($paddings, $padding-value);
+}
+
+* {
+  box-sizing: border-box;
+}

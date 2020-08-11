@@ -1,0 +1,22 @@
+@import "config";
+
+//Footer
+footer {
+  margin-top: 70px;
+  background: none;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: color(primary-color);
+
+    .fa-heart {
+      color: color(red-color);
+    }
+
+    a {
+      text-decoration: none;
+      color: color(primary-color);
+    }
+  }
+}
